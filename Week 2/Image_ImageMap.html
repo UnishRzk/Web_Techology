@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Image Maps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black; 
+        }
+        map area {
+            position: absolute;
+            outline: 2px dashed red; 
+            pointer-events: none; 
+        }
+        .clickable-areas {
+            position: relative;
+            display: inline-block;
+        }
+        .clickable-areas img {
+            display: block;
+        }
+        @media print {
+            body {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Image and Image Maps in HTML</h1>
+    <p>Hover over the image below and click on different areas to navigate to various links:</p>
+
+    <div class="clickable-areas">
+        <img src="img.jpg" alt="Example Image Map" usemap="#examplemap">
+
+        <svg style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none;">
+            <rect x="50" y="50" width="150" height="100" style="fill:none; stroke:red; stroke-width:2;" />
+            <circle cx="300" cy="300" r="50" style="fill:none; stroke:red; stroke-width:2;" />
+            <polygon points="400,50 450,150 350,150" style="fill:none; stroke:red; stroke-width:2;" />
+        </svg>
+    </div>
+
+    <map name="examplemap">
+        <area shape="rect" coords="50,50,200,150" href="https://www.google.com" target="_blank" alt="Google">
+
+        <area shape="circle" coords="300,300,50" href="https://www.facebook.com" target="_blank" alt="Facebook">
+
+        <area shape="poly" coords="400,50,450,150,350,150" href="https://www.youtube.com" target="_blank" alt="YouTube">
+    </map>
+
+    <p>Areas are defined as rectangles, circles, or polygons with clickable links!</p>
+</body>
+</html>

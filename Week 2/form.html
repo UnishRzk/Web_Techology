@@ -7,38 +7,46 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         form {
-            margin: auto;
+            width: 100%;
             max-width: 400px;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid black;
+            text-align: left;
         }
         label {
             font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
         }
-
         input, select, textarea, button {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
-
+            border: 1px solid black;
+            box-sizing: border-box; /* Ensures no extra space is added on the right */
         }
         button {
-            background-color: #377cd6;
-            color: white;
+            border: 1px solid black;
+            color: black;
             font-size: 16px;
+            cursor: pointer;
         }
         button:hover {
-            background-color: #1c2868;
+            background-color: #e0e0e0;
+        }
+        h1 {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Student Details Form</h1>
-    <form action="Basics.html" method="post">
+    <form action="#submit" method="post">
+        <label style="text-align:center;" >Student Details Form</label>
         <label for="studentName">Full Name:</label>
         <input type="text" id="studentName" name="studentName" placeholder="Enter your full name" required>
 
@@ -68,7 +76,7 @@
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
 
-        <button type="submit" >Submit</button>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
