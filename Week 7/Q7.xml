@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Books>
+    <Book id="1" genre="Fiction" language="English">
+        <Title>The Alchemist</Title>
+        <Author>Paulo Coelho</Author>
+        <Publisher>HarperCollins</Publisher>
+        <Price>15.99</Price>
+    </Book>
+
+    <Book id="2" genre="Fantasy" language="Nepali">
+        <Title>Palpasa Café</Title>
+        <Author>Narayan Wagle</Author>
+        <Publisher>Nepalaya</Publisher>
+        <Price>10.50</Price>
+    </Book>
+
+    <Book id="3" genre="Philosophy" language="English">
+        <Title>Siddhartha</Title>
+        <Author>Hermann Hesse</Author>
+        <Publisher>Penguin Classics</Publisher>
+        <Price>12.75</Price>
+    </Book>
+
+    <Book id="4" genre="Biography" language="Nepali">
+        <Title>Karnali Blues</Title>
+        <Author>Buddhisagar</Author>
+        <Publisher>FinePrint</Publisher>
+        <Price>9.99</Price>
+    </Book>
+</Books>

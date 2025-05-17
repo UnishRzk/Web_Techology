@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students>
+    <Student>
+        <Name>Ram Thapa</Name>
+        <Address>Kathmandu, Nepal</Address>
+        <Email>ramthapa@example.com</Email>
+        <Contact>+9779812345678</Contact>
+    </Student>
+
+    <Student>
+        <Name>Sita Gurung</Name>
+        <Address>Pokhara, Nepal</Address>
+        <Email>sitagurung@example.com</Email>
+        <Contact>+9779807654321</Contact>
+    </Student>
+
+    <Student>
+        <Name>Bikash Shrestha</Name>
+        <Address>Lalitpur, Nepal</Address>
+        <Email>bikashshrestha@example.com</Email>
+        <Contact>+9779823456789</Contact>
+    </Student>
+</Students>
